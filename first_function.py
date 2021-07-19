@@ -1,4 +1,4 @@
-def print_hello_world():
-    print("Hello world")
+def print_hello_world(hi):
+    print("Hello world", hi)
 
-print_hello_world()
+print_hello_world(9)
