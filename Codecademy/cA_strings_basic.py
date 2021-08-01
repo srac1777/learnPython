@@ -35,3 +35,16 @@ print(count_char_x("mississippi", "s"))
 # should print 4
 print(count_char_x("mississippi", "m"))
 # should print 1
+
+# Write your count_multi_char_x function here:
+
+
+def count_multi_char_x(word, x):
+  return len(word.split(x))-1
+
+
+# Uncomment hese function calls to test your function:
+print(count_multi_char_x("mississippi", "iss"))
+# should print 2
+print(count_multi_char_x("apple", "pp"))
+# should print 1
