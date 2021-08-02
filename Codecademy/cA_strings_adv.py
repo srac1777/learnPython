@@ -66,3 +66,20 @@ print(make_spoonerism("Hello", "world!"))
 # should print wello Horld!
 print(make_spoonerism("a", "b"))
 # should print b a
+
+
+# Write your add_exclamation function here:
+def add_exclamation(word):
+  if len(word) >= 20:
+    return word
+  res = word
+  while len(res) < 20:
+    res += "!"
+  return res
+
+
+# Uncomment these function calls to test your function:
+print(add_exclamation("Codecademy"))
+# should print Codecademy!!!!!!!!!!
+print(add_exclamation("Codecademy is the best place to learn"))
+# should print Codecademy is the best place to learn
