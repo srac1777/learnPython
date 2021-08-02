@@ -14,3 +14,18 @@ print(check_for_name("My name is jamie", "Jamie"))
 # should print True
 print(check_for_name("My name is Samantha", "Jamie"))
 # should print False
+
+
+# Write your every_other_letter function here:
+def every_other_letter(word):
+  res = ""
+  for i in range(0, len(word), 2):
+    res += word[i]
+  return res
+# Uncomment these function calls to test your function:
+print(every_other_letter("Codecademy"))
+# should print Cdcdm
+print(every_other_letter("Hello world!"))
+# should print Hlowrd
+print(every_other_letter(""))
+# should print 
