@@ -65,3 +65,20 @@ print(substring_between_letters("apple", "p", "e"))
 # should print "pl"
 print(substring_between_letters("apple", "p", "c"))
 # should print "apple"
+
+# Write your x_length_words function here:
+
+
+def x_length_words(sentence, x):
+  words = sentence.split()
+  for word in words:
+    if len(word) < x:
+      return False
+  return True
+
+
+# Uncomment these function calls to test your tip function:
+print(x_length_words("i like apples", 2))
+# should print False
+print(x_length_words("he likes apples", 2))
+# should print True
