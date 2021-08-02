@@ -22,10 +22,29 @@ def every_other_letter(word):
   for i in range(0, len(word), 2):
     res += word[i]
   return res
+
+
 # Uncomment these function calls to test your function:
 print(every_other_letter("Codecademy"))
 # should print Cdcdm
 print(every_other_letter("Hello world!"))
 # should print Hlowrd
 print(every_other_letter(""))
-# should print 
+# should print
+
+
+# Write your reverse_string function here:
+def reverse_string(word):
+  res = ""
+  for i in range(len(word)-1, -1, -1):
+    res += word[i]
+  return res
+
+
+# Uncomment these function calls to test your  function:
+print(reverse_string("Codecademy"))
+# should print ymedacedoC
+print(reverse_string("Hello world!"))
+# should print !dlrow olleH
+print(reverse_string(""))
+# should print
