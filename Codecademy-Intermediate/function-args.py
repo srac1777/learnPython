@@ -85,3 +85,15 @@ def assign_food_items(**order_items):
    print(drinks)
 # Example Call
 assign_food_items(food='Pancakes, Poached Egg', drinks='Water')
+
+
+# Write your code below: 
+
+def single_prix_fixe_order(appetizer, *entrees, sides, **dessert_scoops):
+    print('Here is the Prix Fixe order')
+    print(appetizer)
+    print(entrees)
+    print(sides)
+    print(dessert_scoops)
+
+single_prix_fixe_order('Baby Beets', 'Salmon', 'Scallops', sides='Mashed Potatoes', dessert_scoops="Vanilla, Cookies and Cream" )
