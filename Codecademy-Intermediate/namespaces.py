@@ -57,3 +57,27 @@ multiply(4,50)
 print(' \n -- Local Namespace final -- \n')
 # Write Checkpoint 6 here:
 print(locals())
+
+
+global_variable = 'global'
+
+
+global_variable = 'global'
+
+
+def outer_function():
+  outer_value = "outer"
+
+  def inner_functon():
+    inner_value = "inner"
+
+    def inner_nested_function():
+      nested_value = 'nested'
+    inner_nested_function()
+    # Add locals() below
+    print(locals())
+
+  inner_functon()
+
+
+outer_function()
