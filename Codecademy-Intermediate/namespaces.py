@@ -62,9 +62,6 @@ print(locals())
 global_variable = 'global'
 
 
-global_variable = 'global'
-
-
 def outer_function():
   outer_value = "outer"
 
