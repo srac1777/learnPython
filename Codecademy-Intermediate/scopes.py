@@ -21,3 +21,17 @@ def calc_paint_amount(width, height):
 
 print('Number of paint gallons needed: ')
 print(str(calc_paint_amount(30, 20)))
+
+
+def enclosing_function():
+  var = "value"
+
+  def nested_function():
+    nonlocal var
+    var = "new_value"
+
+  nested_function()
+  print(var)
+
+
+enclosing_function()
