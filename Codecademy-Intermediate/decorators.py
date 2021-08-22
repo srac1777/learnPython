@@ -1,14 +1,14 @@
 def title_decorator(printfn):
-	def wrapper():
+	def wrapper(*args, **kwargs):
 		print("hi")
-		printfn()
+		printfn(*args, **kwargs)
 	return wrapper
 
 @title_decorator
-def my_printfn():
-	print("shashank")
+def my_printfn(name):
+	print(name)
 
 
 # decorated_name = title_decorator(my_printfn)
 # print(decorated_name())
-print(my_printfn())
+print(my_printfn("shashank"))
