@@ -9,7 +9,8 @@ class Employee():
 
 # Write your code below
 class Admin(Employee):
-  pass
+  def say_id(self): # override Employee say_id
+      print("hi")
 
 e1 = Employee()
 e2 = Employee()
