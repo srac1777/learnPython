@@ -10,6 +10,7 @@ class Employee():
 # Write your code below
 class Admin(Employee):
   def say_id(self): # override Employee say_id
+      super().say_id() # still access parent class methods
       print("hi")
 
 e1 = Employee()
