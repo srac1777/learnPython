@@ -22,9 +22,19 @@ class Set():
         else:
             self.data.append(value)
             return self.data
-
+    def delete(self, value):
+        if self.include(value) == True:
+            self.data.remove(value)
+            print("Value {} is removed".format(value))
+            return self.data
+        else:
+            return 'Value {} does not exist'.format(value)
 s = Set()
 print(s.include(1))
 print(s.include(4))
 print(s.setValue(4))
+print(s.setValue(4))
 print(s.include(4))
+print(s.delete(2))
+print(s.delete(2))
+
