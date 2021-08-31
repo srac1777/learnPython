@@ -16,7 +16,15 @@ class Set():
                 return False
         except ValueError:
             return 'Value {} does not exist'.format(value)
+    def setValue(self, value):
+        if self.include(value) == True:
+            return 'Value {} already exists'.format(value)
+        else:
+            self.data.append(value)
+            return self.data
 
 s = Set()
 print(s.include(1))
+print(s.include(4))
+print(s.setValue(4))
 print(s.include(4))
