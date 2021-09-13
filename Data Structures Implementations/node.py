@@ -1,13 +1,27 @@
 class Node:
-  def __init__(self, value, link_node=None):
-    self.value = value
-    self.link_node = link_node
+  def __init__(self, data, next_node=None):
+    self.data = data
+    self.next = next_node
+    
+  def get_val(self):
+    return self.data
+  
+  def set_val(self, val):
+    self.data = val
+    return self.data
+  
+  def get_next(self):
+    return self.next
+  
+  def set_next(self, node):
+    self.next = node
+    
+n1 = Node(3)
+n2 = Node(4,n1)
+n3 = Node(5,n2)
+n4 = Node(6)
 
-  def set_link_node(self, link_node):
-    self.link_node = link_node
-
-  def get_link_node(self):
-    return self.link_node
-
-  def get_value(self):
-    return self.value
+print(n3.get_val())
+print(n2.get_next().get_val())
+n3.set_next(n4)
+print(n3.get_next().get_val())

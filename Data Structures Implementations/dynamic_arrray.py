@@ -1,4 +1,4 @@
-class DynamicArray():
+class DynamicArray:
 	def __init__(self):
 		self.data = [None]
 		self.curr_idx = 0
