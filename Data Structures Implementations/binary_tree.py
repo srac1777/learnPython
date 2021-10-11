@@ -1,3 +1,4 @@
+from collections import deque
 from binary_tree_node import BinaryTreeNode
 
 
@@ -15,9 +16,9 @@ a = BinaryTreeNode("A", b, c)
 def preorder_traversal(root):
     if root == None:
         return
+    print(root.data)
     preorder_traversal(root.leftChild)
     preorder_traversal(root.rightChild)
-    print(root.data)
     
 
 def inorder_traversal(root):
@@ -34,6 +35,27 @@ def postorder_traversal(root):
     postorder_traversal(root.leftChild)
     postorder_traversal(root.rightChild)
     print(root.data)
+    
 
+def bfs(root):
+    q = deque([])
+    print(root.data)
+    q.append(root.leftChild)
+    q.append(root.rightChild)
+    while len(q) > 0:
+        curr = q.popleft()
+        print(curr.data)
+        if curr.leftChild:
+            q.append(curr.leftChild)
+        if curr.rightChild:
+            q.append(curr.rightChild)
 
-postorder_traversal(a)
+def dfs(root):
+    if root == None:
+        return
+    dfs(root.leftChild)
+    dfs(root.rightChild)
+    print(root.data)
+    
+
+dfs(a)
