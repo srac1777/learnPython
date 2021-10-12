@@ -23,4 +23,4 @@ def merge(list1, list2):
 
 list1 = [0]
 list2 = [1,2,2,4,7,19,23,77,91, 99, 101]
-print(merge(list1, list2))
+# print(merge(list1, list2))
